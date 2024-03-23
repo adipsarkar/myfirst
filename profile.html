@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        .profile-info label {
+            font-weight: bold;
+        }
+        .profile-info p {
+            margin-top: 5px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .edit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .edit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- User Profile -->
+        <div class="user-profile">
+            <h2>User Profile</h2>
+            <!-- Input field for uploading user photo -->
+            <input type="file" accept="image/*" id="profile-image-upload" style="display: none;">
+            <label for="profile-image-upload" style="cursor: pointer;">
+                <img id="profile-image-preview" src="ar.jpg" alt="Profile Image" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            </label>
+            <!-- Profile information -->
+            <p>Name: Sarkar</p>
+            <p>Email: sarkar@gmail.com</p>
+            <p>Address: Inaruwa-6,Madhesha</p>
+            <!-- Edit Profile button -->
+            <button id="edit-profile-btn" class="add-product-btn">Edit Profile</button>
+        </div>
+</div>
+
+</body>
+</html>
